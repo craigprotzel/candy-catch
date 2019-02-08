@@ -96,6 +96,9 @@ function restartGame(){
 	gameOver = false;
 	winner = false;
 
+	//Reset the score
+	candiesEaten = 0;
+
 	//Remove any left over candy sprites
 	candies.removeSprites();
 	//Remove player 
