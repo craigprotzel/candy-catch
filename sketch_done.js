@@ -58,7 +58,7 @@ function draw(){
 		let curTime = timeLimit - floor(timer/60);
 		text("Time: " + curTime, width-20, 60);	
 
-		//Check if the candies have all been collected or time has run out
+		//Check if the candies have all been collected or if time has run out
 		if (candies.length === 0 ){
 			winner = true;
 		}
@@ -101,7 +101,7 @@ function restartGame(){
 	//Remove player 
 	player.remove();
 
-	//Make sprites
+	//Re-make sprites again
 	makeCharacters();
 }
 
